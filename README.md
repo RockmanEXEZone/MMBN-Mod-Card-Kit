@@ -76,19 +76,21 @@ raw e-Card dump files, and you can scan these in emulators. Below you will find
 instructions on scanning cards and sending them to your game using No$gba.
 
 **Before you begin:**
-1.  Gather a Nintendo DS or Nintendo DS Lite, a North American e-Reader and a
-    SLOT-1 flash card that is capable of running homebrew.
-2.  Download the GBA Backup Tool v0.21 homebrew and extract it to the microSD
-    card of your flash card.
-3.  Start up your Nintendo DS and run GBA Backup Tool.
-4.  Insert the e-Reader into SLOT-2, and press the A button.
-5.  The e-Reader should be detected with the game title `CARDE_READER PSAE 00`.
-6.  Press R twice to switch to ROM Backup mode.
-7.  Press B, then A to dump the e-Reader ROM to the flash card's microSD card.
-8.  Repeat steps 4 - 7 for any Mega Man Battle Network games that you want to
-    transfer e-Cards to.
+
+1.   Gather a Nintendo DS or Nintendo DS Lite, a North American e-Reader and a
+     SLOT-1 flash card that is capable of running homebrew.
+2.   Download the GBA Backup Tool v0.21 homebrew and extract it to the microSD
+     card of your flash card.
+3.   Start up your Nintendo DS and run GBA Backup Tool.
+4.   Insert the e-Reader into SLOT-2, and press the A button.
+5.   The e-Reader should be detected with the game title `CARDE_READER PSAE 00`.
+6.   Press R twice to switch to ROM Backup mode.
+7.   Press B, then A to dump the e-Reader ROM to the flash card's microSD card.
+8.   Repeat steps 4 - 7 for any Mega Man Battle Network games that you want to
+     transfer e-Cards to.
 
 **Transferring e-Cards to your game:**
+
 1.  Download and run the No$gba emulator (gaming version).
 2.  Go to `Options`, then `Emulation Setup`, and set the `Number of Emulated
     Gameboys` to `2`.
@@ -187,7 +189,7 @@ Credits
  -  **Qwiscot**, for the extremely useful Rockman EXE card-e+ Cards guide.
  -  **Tim Schuerewegen**, for his awesome e-Reader API documentation.
 
-Rockman, Rockman EXE, Mega Man and Mega Man Battle Network are © Capcom 1987 -
+Rockman, Rockman EXE, Mega Man and Mega Man Battle Network are Â© Capcom 1987 -
 2015. All rights belong to their respective owners.
 
 
