@@ -1,0 +1,12 @@
+﻿.db	0xF7,0x02,0x39,0x6C,0x03
+.db	0xF1,0x00,0x00
+
+.if lang == 0					// if JP
+	.table	table_file_jp
+	.strn	"サブイベント",card_id
+.else						// if EN
+	.table	table_file_en
+	.strn	"Sub Event No.",card_id
+.endif
+
+.db	0xEE,0xFF,0x00,0x00

@@ -1,0 +1,65 @@
+﻿.db	0xE8,0x0A
+.db	0xF1,0x00,0x00
+.db	0xF7,0x02,0x33,0x6C,0x03
+.db	0xF1,0x00,0x00
+
+// Script handler exploit
+.db	0xF9,0x01,0x00,0x05 + (@@asm & 1b)
+.db	0xF9,0x01,0x01,0x34
+.db	0xF9,0x01,0x02,0x20
+.db	0xF9,0x01,0x03,0x47
+
+.db	0xFC,0x03,0x5A,0x00	// BN6
+
+@@asm:
+.align 2
+add	r4,@@japanese-.-5
+	
+// Check region
+ldr	r1,=80000A0h
+ldrb	r0,[r1,0Fh]
+cmp	r0,4Ah
+bne	@@setEnglish
+
+// Detect EXE6 fan translation
+ldr	r1,=87FF4FCh
+ldr	r0,[r1]
+ldr	r2,=52414345h	// ECAR
+cmp	r0,r2
+bne	@@end
+
+ldr	r0,[r1,4h]
+ldr	r2,=4E455F44h	// D_EN
+cmp	r0,r2
+bne	@@end
+
+@@setEnglish:
+add	r4,@@english-@@japanese
+
+@@end:
+mov	r15,r14
+.pool
+
+@@japanese:
+.table table_file_jp
+
+.strn	"いらいイベント"
+.db	0xE9
+.strn	card_name_jp_game
+.db	0xE9
+.strn	"が ついかされた!"
+
+.db	0xE7,0x00
+.db	0xEE,0xFF,0x00,0x00
+
+@@english:
+.table table_file_en
+
+.strn	"Request event"
+.db	0xE9
+.strn	card_name_en_game
+.db	0xE9
+.strn	"has been added!"
+
+.db	0xE7,0x00
+.db	0xEE,0xFF,0x00,0x00
