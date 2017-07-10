@@ -1,6 +1,8 @@
 Mega Man Battle Network: Mod Card Kit v1.0
 ==========================================
 
+**IMPORTANT: If you use VBA-M to load saveable cards to then transfer the save to a real e-Reader, make a back-up of your e-Reader save file first! Saves created in VBA-M do not initialize the e-Reader calibration data, which when transferred to a real e-Reader WILL cause the card scanner to STOP WORKING! If this happens, you can repair the card reader by restoring your e-Reader back-up save file.**
+
 The Japanese versions of Rockman EXE 4 through 6 supported the Nintendo e-Reader
 in the form of "Kaizou Cards". Most of them were sold in booster packs or given
 away at events. You could scan these cards with the e-Reader and then transmit
