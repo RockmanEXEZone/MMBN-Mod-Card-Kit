@@ -1,4 +1,4 @@
-﻿.include defaults_chip.asm
+﻿.include "defaults_chip.asm"
 
 table_file_jp		equ	"exe5-utf8.tbl"
 table_file_en		equ	"bn5-utf8.tbl"
@@ -29,8 +29,8 @@ card_game_desc_en_1	equ	"Hatred"
 card_game_desc_en_2	equ	"formed"
 card_game_desc_en_3	equ	"into Bass"
 
-card_chip_img		equ	img_chaosl.bin
-card_chip_pal		equ	pal_chaosl.bin
-card_chip_icon		equ	dummy.bin
-card_chip_name_img	equ	chaosl.img.bin
-card_chip_name_pal	equ	chaosl.pal.bin
+card_chip_img		equ	"img_chaosl.bin"
+card_chip_pal		equ	"pal_chaosl.bin"
+card_chip_icon		equ	"dummy.bin"
+card_chip_name_img	equ	"chaosl.img.bin"
+card_chip_name_pal	equ	"chaosl.pal.bin"

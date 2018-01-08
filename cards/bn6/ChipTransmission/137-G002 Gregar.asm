@@ -1,4 +1,4 @@
-﻿.include defaults_chip.asm
+﻿.include "defaults_chip.asm"
 
 table_file_jp		equ	"exe6-utf8.tbl"
 table_file_en		equ	"bn6-utf8.tbl"
@@ -29,8 +29,8 @@ card_game_desc_en_1	equ	"Gregar's"
 card_game_desc_en_2	equ	"scorching"
 card_game_desc_en_3	equ	"breath!"
 
-card_chip_img		equ	img_gregar.bin
-card_chip_pal		equ	pal_gregar.bin
-card_chip_icon		equ	dummy.bin
-card_chip_name_img	equ	gregar.img.bin
-card_chip_name_pal	equ	gregar.pal.bin
+card_chip_img		equ	"img_gregar.bin"
+card_chip_pal		equ	"pal_gregar.bin"
+card_chip_icon		equ	"dummy.bin"
+card_chip_name_img	equ	"gregar.img.bin"
+card_chip_name_pal	equ	"gregar.pal.bin"

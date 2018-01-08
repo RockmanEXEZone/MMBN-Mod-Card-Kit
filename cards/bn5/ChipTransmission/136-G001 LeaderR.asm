@@ -1,4 +1,4 @@
-﻿.include defaults_chip.asm
+﻿.include "defaults_chip.asm"
 
 table_file_jp		equ	"exe5-utf8.tbl"
 table_file_en		equ	"bn5-utf8.tbl"
@@ -29,8 +29,8 @@ card_game_desc_en_1	equ	"ProtoMan"
 card_game_desc_en_2	equ	"& Colonel"
 card_game_desc_en_3	equ	"together!"
 
-card_chip_img		equ	img_leaderr.bin
-card_chip_pal		equ	pal_leaderr.bin
-card_chip_icon		equ	dummy.bin
-card_chip_name_img	equ	leaderr.img.bin
-card_chip_name_pal	equ	leaderr.pal.bin
+card_chip_img		equ	"img_leaderr.bin"
+card_chip_pal		equ	"pal_leaderr.bin"
+card_chip_icon		equ	"dummy.bin"
+card_chip_name_img	equ	"leaderr.img.bin"
+card_chip_name_pal	equ	"leaderr.pal.bin"

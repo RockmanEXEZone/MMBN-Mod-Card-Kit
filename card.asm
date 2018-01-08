@@ -8,7 +8,7 @@
 auto	equ	1
 
 .gba
-.create out\card.01.mb,0x02000000
+.create "out/card.01.mb",0x02000000
 bin_start:
 
 // switch to thumb mode
@@ -1171,35 +1171,35 @@ data_strpal:
 data_tileset:
 .if (game_code >> 8) == 0x423457			// if BN4
 	.if (card_type == 0)
-		.import include\tileset_bn4_chip.bin
+		.import "include/tileset_bn4_chip.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tileset_bn4_mod.bin
+		.import "include/tileset_bn4_mod.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425242			// if BN5
 	.if (card_type == 0)
-		.import include\tileset_bn5_item_chip.bin
+		.import "include/tileset_bn5_item_chip.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tileset_bn5_mod.bin
+		.import "include/tileset_bn5_mod.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\tileset_bn5_item_chip.bin
+		.import "include/tileset_bn5_item_chip.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425235			// if BN6
 	.if (card_type == 0)
-		.import include\tileset_bn6_item_chip_request.bin
+		.import "include/tileset_bn6_item_chip_request.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tileset_bn6_mod.bin
+		.import "include/tileset_bn6_mod.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\tileset_bn6_item_chip_request.bin
+		.import "include/tileset_bn6_item_chip_request.bin"
 	.endif
 	.if (card_type == 4)
-		.import include\tileset_bn6_item_chip_request.bin
+		.import "include/tileset_bn6_item_chip_request.bin"
 	.endif
 .endif
 .align 4
@@ -1211,35 +1211,35 @@ data_tileset_end:
 data_palettes:
 .if (game_code >> 8) == 0x423457			// if BN4
 	.if (card_type == 0)
-		.import include\palette_bn4_chip.bin
+		.import "include/palette_bn4_chip.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\palette_bn4_mod.bin
+		.import "include/palette_bn4_mod.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425242			// if BN5
 	.if (card_type == 0)
-		.import include\palette_bn5_item_mod_chip.bin
+		.import "include/palette_bn5_item_mod_chip.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\palette_bn5_item_mod_chip.bin
+		.import "include/palette_bn5_item_mod_chip.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\palette_bn5_item_mod_chip.bin
+		.import "include/palette_bn5_item_mod_chip.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425235			// if BN6
 	.if (card_type == 0)
-		.import include\palette_bn6_item_mod_chip_request.bin
+		.import "include/palette_bn6_item_mod_chip_request.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\palette_bn6_item_mod_chip_request.bin
+		.import "include/palette_bn6_item_mod_chip_request.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\palette_bn6_item_mod_chip_request.bin
+		.import "include/palette_bn6_item_mod_chip_request.bin"
 	.endif
 	.if (card_type == 4)
-		.import include\palette_bn6_item_mod_chip_request.bin
+		.import "include/palette_bn6_item_mod_chip_request.bin"
 	.endif
 .endif
 .align 4
@@ -1251,35 +1251,35 @@ data_palettes_end:
 data_tilemap:
 .if (game_code >> 8) == 0x423457			// if BN4
 	.if (card_type == 0)
-		.import include\tilemap_bn4_chip.bin
+		.import "include/tilemap_bn4_chip.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tilemap_bn4_mod.bin
+		.import "include/tilemap_bn4_mod.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425242			// if BN5
 	.if (card_type == 0)
-		.import include\tilemap_bn5_item.bin
+		.import "include/tilemap_bn5_item.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tilemap_bn5_mod.bin
+		.import "include/tilemap_bn5_mod.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\tilemap_bn5_chip.bin
+		.import "include/tilemap_bn5_chip.bin"
 	.endif
 .endif
 .if (game_code >> 8) == 0x425235			// if BN6
 	.if (card_type == 0)
-		.import include\tilemap_bn6_item_request.bin
+		.import "include/tilemap_bn6_item_request.bin"
 	.endif
 	.if (card_type == 1)
-		.import include\tilemap_bn6_mod.bin
+		.import "include/tilemap_bn6_mod.bin"
 	.endif
 	.if (card_type == 2)
-		.import include\tilemap_bn6_chip.bin
+		.import "include/tilemap_bn6_chip.bin"
 	.endif
 	.if (card_type == 4)
-		.import include\tilemap_bn6_item_request.bin
+		.import "include/tilemap_bn6_item_request.bin"
 	.endif
 .endif
 
@@ -1326,37 +1326,37 @@ db	card_id
 
 .align 4
 data_transmit_jp_1:
-.import out\text1_jp.lz
+.import "out/text1_jp.lz"
 
 .align 4
 data_transmit_jp_2:
-.import out\text2_jp.lz
+.import "out/text2_jp.lz"
 
 .align 4
 data_transmit_jp_3:
 .if (game_code >> 8) == 0x423457 && card_type == 0
 data_chip_img:
-	.import include\card_chip_img
+	.import "include/"+card_chip_img
 .elseif (game_code >> 8) != 0x423457 && card_type == 2
 data_chip_pal:
-	.import include\card_chip_pal
+	.import "include/"+card_chip_pal
 .endif
 
 .align 4
 data_transmit_jp_4:
 .if (game_code >> 8) == 0x423457 && card_type == 0
 data_chip_pal:
-	.import include\card_chip_pal
+	.import "include/"+card_chip_pal
 .elseif (game_code >> 8) != 0x423457 && card_type == 2
 // Don't need to actually include chip image for BN5/BN6, but do it just in case
 data_chip_img:
-	.import include\card_chip_img
+	.import "include/"+card_chip_img
 .endif
 
 .align 4
 data_transmit_jp_5:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import include\card_chip_icon
+	.import "include/"+card_chip_icon
 .endif
 
 .align 4
@@ -1398,36 +1398,36 @@ data_transmit_en_0:
 .align 4
 data_transmit_en_1:
 .if (game_code >> 8) != 0x425235
-	.import out\text1_en.lz
+	.import "out/text1_en.lz"
 .endif
 
 .align 4
 data_transmit_en_2:
 .if (game_code >> 8) != 0x425235
-	.import out\text2_en.lz
+	.import "out/text2_en.lz"
 .endif
 
 .align 4
 data_transmit_en_3:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import include\card_chip_img
+	.import "include/"+card_chip_img
 .elseif (game_code >> 8) != 0x423457 && card_type == 2
-	.import include\card_chip_pal
+	.import "include/"+card_chip_pal
 .endif
 
 .align 4
 data_transmit_en_4:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import include\card_chip_pal
+	.import "include/"+card_chip_pal
 .elseif (game_code >> 8) == 0x425242 && card_type == 2
 // Don't need to actually include chip image for BN5/BN6, but do it just in case
-	.import include\card_chip_img
+	.import "include/"+card_chip_img
 .endif
 
 .align 4
 data_transmit_en_5:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import include\card_chip_icon
+	.import "include/"+card_chip_icon
 .endif
 
 .align 4
@@ -1440,7 +1440,7 @@ data_transmit_en_end:
 //.if (game_code >> 8) != 0x423457 && card_type == 2
 //.align 4
 //data_chip_img:
-//	.import include\card_chip_img
+//	.import "include/"+card_chip_img
 //.endif
 
 
@@ -1448,18 +1448,18 @@ data_transmit_en_end:
 .align 4
 data_chip_name_img:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import out\card_chip_name_img
+	.import "out/"+card_chip_name_img
 .elseif (game_code >> 8) != 0x423457 && card_type == 2
-	.import out\card_chip_name_img
+	.import "out/"+card_chip_name_img
 .endif
 
 .align 4
 data_chip_name_pal:
 .if (game_code >> 8) == 0x423457 && card_type == 0
-	.import out\card_chip_name_pal
+	.import "out/"+card_chip_name_pal
 	.fill	0x12
 .elseif (game_code >> 8) != 0x423457 && card_type == 2
-	.import out\card_chip_name_pal
+	.import "out/"+card_chip_name_pal
 	.fill	0x12
 .endif
 

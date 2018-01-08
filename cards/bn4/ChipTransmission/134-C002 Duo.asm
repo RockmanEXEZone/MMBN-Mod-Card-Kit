@@ -1,4 +1,4 @@
-﻿.include defaults_chip.asm
+﻿.include "defaults_chip.asm"
 
 table_file_jp		equ	"exe4-utf8.tbl"
 table_file_en		equ	"bn4-utf8.tbl"
@@ -29,8 +29,8 @@ card_game_desc_en_1	equ	"MetrKnukl"
 card_game_desc_en_2	equ	"of justic"
 card_game_desc_en_3	equ	"rain down"
 
-card_chip_img		equ	img_duo.bin
-card_chip_pal		equ	pal_duo.bin
-card_chip_icon		equ	icon_duo.bin
-card_chip_name_img	equ	duo.img.bin
-card_chip_name_pal	equ	duo.pal.bin
+card_chip_img		equ	"img_duo.bin"
+card_chip_pal		equ	"pal_duo.bin"
+card_chip_icon		equ	"icon_duo.bin"
+card_chip_name_img	equ	"duo.img.bin"
+card_chip_name_pal	equ	"duo.pal.bin"

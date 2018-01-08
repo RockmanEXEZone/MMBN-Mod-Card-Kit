@@ -1,4 +1,4 @@
-﻿.include defaults_mod.asm
+﻿.include "defaults_mod.asm"
 
 table_file_jp		equ	"exe5-utf8.tbl"
 table_file_en		equ	"bn5-utf8.tbl"

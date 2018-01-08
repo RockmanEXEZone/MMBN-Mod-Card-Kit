@@ -1,4 +1,4 @@
-﻿.include defaults_chip.asm
+﻿.include "defaults_chip.asm"
 
 table_file_jp		equ	"exe6-utf8.tbl"
 table_file_en		equ	"bn6-utf8.tbl"
@@ -29,8 +29,8 @@ card_game_desc_en_1	equ	"Fang&wing"
 card_game_desc_en_2	equ	"doubl atk"
 card_game_desc_en_3	equ	"frenzy!"
 
-card_chip_img		equ	img_dblbeast.bin
-card_chip_pal		equ	pal_dblbeast.bin
-card_chip_icon		equ	dummy.bin
-card_chip_name_img	equ	dblbeast.img.bin
-card_chip_name_pal	equ	dblbeast.pal.bin
+card_chip_img		equ	"img_dblbeast.bin"
+card_chip_pal		equ	"pal_dblbeast.bin"
+card_chip_icon		equ	"dummy.bin"
+card_chip_name_img	equ	"dblbeast.img.bin"
+card_chip_name_pal	equ	"dblbeast.pal.bin"
